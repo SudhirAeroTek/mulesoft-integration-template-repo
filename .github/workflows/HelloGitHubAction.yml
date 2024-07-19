@@ -9,12 +9,13 @@ on:
 
 
 jobs:
-    my_job:
-        runs-on: ubuntu-latest
+    HelloGitHub:
+        runs-on: uubuntu-18.04
         steps:
-            - name: Print input
+            - name: printHello
               run: |
-                echo "Input is ${{ github.event.inputs.myinput}}"
+                echo "input is"  ${{github.event.inputs.myInput}} "printed"
+        
                
             
                         
