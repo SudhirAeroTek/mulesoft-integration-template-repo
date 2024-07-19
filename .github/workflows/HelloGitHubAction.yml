@@ -1,0 +1,26 @@
+on:
+    workflow_dispatch: 
+        inputs:
+            myInput:
+                type: string
+                description: "this string will be printed"
+                required: true
+                default: "First GitHubAction"
+
+
+jobs:
+    my_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print input
+              run: |
+                echo "Input is ${{ github.event.inputs.myinput}}"
+               
+            
+                        
+                    
+            
+            
+    
+
+  
