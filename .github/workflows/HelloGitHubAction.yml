@@ -9,12 +9,12 @@ on:
 
 
 jobs:
-    HelloGitHub:
+    HelloGitHubJob:
         runs-on: uubuntu-18.04
         steps:
             - name: printHello
               run: |
-                echo "input is"  ${{github.event.inputs.myInput}} "printed"
+                echo "input works in double quote only  ${{github.event.inputs.myInput}} printed"
         
                
             
